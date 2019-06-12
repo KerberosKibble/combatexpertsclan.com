@@ -1,0 +1,55 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Bootswatch
+@import 'bootswatch';
+
+// Application SCSS
+body {
+    background-image: url('https://content.halocdn.com/media/Default/community/blogs/3840_haloinfinite_e318_ring-96bf71d241184bfb8b1f1b0c3bb8a1a0.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@include media-breakpoint-up(xs) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+
+    .flavor-image {
+        width: 50%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .jumbotron h1 {
+        font-size: 4.5rem;
+    }
+
+    .flavor-image {
+        width: 100%;
+    }
+}
+
+.flavor-image {
+    grid-column: span 3;
+}
+
+.flavor-content {
+    grid-column: span 9;
+    text-align: center;
+    margin: auto;
+}
+
+.flavor-cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
