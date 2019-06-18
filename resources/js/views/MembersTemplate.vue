@@ -1,21 +1,16 @@
 <template>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Combat Experts Clan Members</div>
-
-                    <div class="card-body">
-                        This component will show the members.
-                    </div>
-                </div>
-            </div>
-        </div>
+        <jumbotron-header text="Members" />
     </div>
 </template>
 
 <script>
+    import JumbotronHeaderComponent from '../components/JumbotronHeaderComponent'
+
     export default {
-        
+        components: {
+            'jumbotron-header': JumbotronHeaderComponent
+        }
     }
+
 </script>

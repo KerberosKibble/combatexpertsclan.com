@@ -1,15 +1,19 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+// Vue core
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import './bootstrap'
 
-import './bootstrap';
+// View templates
+import HomeTemplate from './views/HomeTemplate'
+import MembersTemplate from './views/MembersTemplate'
+import ClanCharterTemplate from './views/ClanCharterTemplate'
+import RecruitingCenterTemplate from './views/RecruitingCenterTemplate'
+import NavigationBar from './components/NavbarComponent'
 
-import HomeTemplate from './views/HomeTemplate';
-import MembersTemplate from './views/MembersTemplate';
-import ClanCharterTemplate from './views/ClanCharterTemplate';
-import RecruitingCenterTemplate from './views/RecruitingCenterTemplate';
+// Cookie Law
+import CookieLaw from 'vue-cookie-law'
 
-import CookieLaw from 'vue-cookie-law';
-
+// Routing
 Vue.use(VueRouter);
 
 const routes = [{
@@ -47,9 +51,14 @@ const router = new VueRouter({
 
 const app = new Vue({
     el: '#application',
+    router: router,
+
     components: {
-        'home-template': HomeTemplate,
+        'navigation-bar': NavigationBar,
         'cookie-law': CookieLaw
     },
-    router: router
+
+    data: {
+
+    }
 });
