@@ -3,7 +3,7 @@ This is the repository for the Combat Experts Clan website
 ## Requirements
 
 * PHP 7.1.3 or higher
-* PHP Composer
+* Composer
 * NodeJS
 * Nginx or Apache
 * MySQL, SQLite, PostgreSQL, or Microsoft SQL Server
